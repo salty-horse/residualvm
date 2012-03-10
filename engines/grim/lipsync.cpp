@@ -21,6 +21,7 @@
  */
 
 #include "common/endian.h"
+#include "common/util.h"
 
 #include "engines/grim/lipsync.h"
 #include "engines/grim/resource.h"
@@ -119,6 +120,6 @@ const LipSync::PhonemeAnim LipSync::_animTable[] = {
 	{0x0292, 2}, {0x002E, 2}
 };
 
-const int LipSync::_animTableSize = sizeof(LipSync::_animTable) / sizeof(LipSync::_animTable[0]);
+const int LipSync::_animTableSize = ARRAYSIZE(LipSync::_animTable);
 
 } // end of namespace Grim
